@@ -1,3 +1,5 @@
+#!/bin/python
+
 class Rupee:
 
     def __init__(self): 
