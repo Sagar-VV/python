@@ -1,21 +1,20 @@
-nums = [1,3,5,6]
-target = 5
-
 def searchInsert(nums,target):
     
     start = 0
     end = len(nums)
-    
+    position = "not found"
     while start <= end :
-        mid = (start + end ) // 2
-        if nums[mid] == target:
-            print (mid)
+        mid = ((start + end ) // 2) + 1
+        
+        if mid == end and mid != target:
             break
-            print ('inside if')
+        if nums[mid] == target:
+            print(mid)
+            break
         elif nums[mid] < target: 
-            start = mid + 1
+            start = mid 
         elif nums[mid] > target:
-            end = mid - 1
-    return mid
-
-searchInsert(nums = [1,3,4,5,6], target = 6)
+            end = mid 
+    print( position)
+        
+searchInsert(nums = [1,2,3,4,5,6,7,8], target = 11)
