@@ -1,5 +1,5 @@
-s = [1,2,3,4,5]
+student_marks = {'sagar': (23 , 40 ,50) , 
+                 'yash' : (20,30,40),
+                 'harsimran': (50,60,70)}
 
-high = max(s)
-
-print(high)
+print (sum(student_marks['sagar']))
