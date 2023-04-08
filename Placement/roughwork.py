@@ -1,5 +1,15 @@
-student_marks = {'sagar': (23 , 40 ,50) , 
-                 'yash' : (20,30,40),
-                 'harsimran': (50,60,70)}
+my_dict = {}
 
-print (sum(student_marks['sagar']))
+for i in range(int(input('Total element in dictonary : '))):
+    
+    name = input('write the name : ')
+    score = input('write the score : ')
+
+    
+    my_dict[name] = score
+
+
+arange = (sorted(my_dict.items(), key=lambda kv:
+                 (kv[1], kv[0])))
+
+print (arange)
