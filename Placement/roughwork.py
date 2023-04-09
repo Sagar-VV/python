@@ -1,15 +1,3 @@
-my_dict = {}
+dict = {'apple': 2, 'banana': 3, 'almond':2 , 'beetroot': 3, 'peach': 4}
 
-for i in range(int(input('Total element in dictonary : '))):
-    
-    name = input('write the name : ')
-    score = input('write the score : ')
-
-    
-    my_dict[name] = score
-
-
-arange = (sorted(my_dict.items(), key=lambda kv:
-                 (kv[1], kv[0])))
-
-print (arange)
+[v[0] for v in sorted(dict.items(), key=lambda k,v: v,k )]
