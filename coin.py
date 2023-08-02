@@ -9,6 +9,7 @@ class Rupee:
         self.diameter = 22
         self.thickness = 3.15
         self.heads = True
+        # triying
  
 
 
